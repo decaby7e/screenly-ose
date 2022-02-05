@@ -28,7 +28,7 @@ chown -Rf root:root /usr/lib/sudo
 chown -f root:root /etc/sudoers
 chmod -f 4755 /usr/bin/sudo
 
-# SUGUSR1 from the viewer is also sent to the container
+# SIGUSR1 from the viewer is also sent to the container
 # Prevent it so that the container does not fail
 trap '' 16
 
